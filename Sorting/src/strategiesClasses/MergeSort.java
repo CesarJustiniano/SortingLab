@@ -38,7 +38,13 @@ public class MergeSort<E> extends AbstractSortingStrategy<E> {
 	 * portion
 	 */
 	private void ms(int first, int last) {
-		// ADD CODE HERE 1
+		if(first < last){
+			int mid = (first + last) / 2;
+			ms(first, mid);
+			ms(mid + 1, last);
+			merge(first, mid, last);
+		}
+		
 	}
 
 	/**

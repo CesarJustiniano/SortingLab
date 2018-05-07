@@ -14,7 +14,7 @@ public class HeapSortTester1 {
 		
 		TestingUtils.displayListElements("Original Data", data);
 		
-		HeapSort<Integer> sorter = new HeapSort<>(new IntegerComparator1()); 
+		HeapSort<Integer> sorter = new HeapSort<>(new IntegerComparator2()); 
 		 
 
 		sorter.sortList(data);
